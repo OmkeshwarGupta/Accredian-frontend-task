@@ -13,10 +13,13 @@ import ReferPupup from './components/ReferPupup'
 const App = () => {
 
   const [refer, setRefer]= useState(false);
+
+  const url="https://backend-task-845p.onrender.com/api/referrals"
+
   return (
     <div>
       {
-        refer ? <ReferPupup refer={refer} setRefer={setRefer} /> :<div></div>
+        refer ? <ReferPupup url={url} refer={refer} setRefer={setRefer} /> :<div></div>
       }
       
       <Header/>
